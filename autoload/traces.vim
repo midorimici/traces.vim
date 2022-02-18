@@ -977,7 +977,7 @@ function! s:cmdl_enter(view) abort
   let s:buf[s:nr].changed = 0
   let s:buf[s:nr].cmdheight = &cmdheight
   let s:buf[s:nr].redraw = 1
-  let s:buf[s:nr].s_mark = (&encoding == 'utf-8' ? "\uf8b4" : '' )
+  let s:buf[s:nr].s_mark = (&encoding == 'utf-8' ? "\u200b" : '' )
   let s:buf[s:nr].cur_win = win_getid()
   let s:buf[s:nr].alt_win = win_getid(winnr('#'))
   let s:buf[s:nr].winwidth = &winwidth
